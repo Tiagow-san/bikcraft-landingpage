@@ -1,0 +1,115 @@
+:root {
+  --gray: #f7f7f7;
+  --darkgray: #c6c6c6;
+  --red: #ee2211;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu a {
+  padding: 15px 30px;
+  background: #fff;
+  border-radius: 4px;
+  color: #000;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.intro {
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  place-items: end end;
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  text-align: right;
+}
+.red-bar {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background: var(--red);
+  top: 30px;
+  right: -30px;
+}
+
+.morebtn {
+  background: var(--red);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+.subtitle {
+  font-size: 64px;
+  color: var(--darkgray);
+  text-transform: uppercase;
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+
+.advantages {
+  background: #fff;
+  padding: 40px;
+}
+
+.advantages-items {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.advantages-items p {
+  grid-column: 2;
+}
+/* general styles */
+
+body {
+  background: var(--gray);
+  font-family: Arial;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+footer {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
